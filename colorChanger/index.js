@@ -1,6 +1,6 @@
 function getRandomColor() {
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    return `#${randomColor.padStart(6, '0')}`;
+    return `#${randomColor.padStart(6, '1')}`;
   }
   let intervalId 
   function changeColor(){
@@ -13,5 +13,5 @@ function getRandomColor() {
   
   document.querySelector("#stop").addEventListener("click",(e)=>{
     clearInterval(intervalId)
-    intervalId = null ;
+    
   })
